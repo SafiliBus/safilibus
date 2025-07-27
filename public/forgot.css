@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('assets/img/GAPURA TERMINAL.jpg') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.form-box {
+    z-index: 999;
+    background: rgba(6, 5, 5, 0.1);
+    /* transparan keabu-abuan */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    /* efek lampu/glow */
+    backdrop-filter: blur(10px);
+    /* efek kaca */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    width: 500px;
+    padding: 50px 25px;
+    overflow: hidden;
+}
+
+.form-box h2 {
+    color: #060606;
+    font-size: 2em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.form-box .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #050505;
+    margin-bottom: 25px;
+}
+
+.form-box .field button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+}
+
+.form-box .field.active {
+    border-bottom: 2px solid #0065ff;
+    transition: 0.3s ease;
+}
+
+.form-box .field input {
+    color: #000000;
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+
+.form-box .field i {
+    color: #040505;
+    font-size: 1.3em;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.form-box .field.active i {
+    color: #0065ff;
+    transition: 0.3s ease;
+}
+
+::placeholder {
+    color: #050404;
+    font-size: 0.85em;
+}
+
+.forgot-link {
+    text-align: right;
+}
+
+.forgot-link a {
+    color: #0065ff;
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.submit-btn {
+    background: #040506;
+    color: #f3f0f0;
+    border: none;
+    outline: none;
+    width: 155px;
+    padding: 11px 5px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.submit-code {
+    background: #070708;
+    color: #060505;
+    border: none;
+    outline: none;
+    width: 120px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    font-weight: 500;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.form-box .email-field {
+    border-bottom: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.form-box .email-field .email {
+    border-bottom: 2px solid #0b0a0a;
+    padding-bottom: 5px;
+    flex: 1;
+}
+
+
+.form-box .email-field.active .email {
+    border-bottom: 2px solid #060b13;
+    transition: 0.3s ease;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .back-header {
+    color: #090909;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(0 0 0 / 15%);
+    border-radius: 15px;
+    padding: 2px 15px;
+}
+
+header .back-header i {
+    margin-right: 10px;
+}
+
+header .back-header:hover {
+    background-color: #828da0;
+}
+
+.eye-btn-reinput {
+    cursor: pointer;
+}
+
+.eye-btn-reinput i:hover {
+    color: #090909;
+    transition: 0.3s ease;
+}
+
+.eye-btn-confirm-password {
+    cursor: pointer;
+}
+
+.eye-btn-confirm-password i:hover {
+    color: #09090a;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 960px) {
+    .form-box {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    header .back-header {
+        font-size: 15px;
+    }
+
+    .form-box {
+        margin-top: 50px;
+    }
+
+    .form-box h2 {
+        font-size: 1.7em;
+        margin-bottom: 20px;
+    }
+
+    .form-box .field i {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    .form-box .field input {
+        color: #040404;
+        border: none;
+        outline: none;
+        background: none;
+        width: 100%;
+        font-size: .85em;
+    }
+
+    .submit-btn {
+        padding: 8px 5px;
+        width: 100px;
+        font-size: 13px;
+    }
+}

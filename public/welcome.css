@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+body {
+    min-height: 100vh;
+    background: url('assets/img/GAPURA TERMINAL.jpg') no-repeat center center fixed transparent;
+    background-size: cover;
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5px;
+}
+
+.cover {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cover::before {
+    content: '';
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(255, 255, 255, 40%) 0%, rgb(168, 224, 255, 68%) 21%, rgb(16, 171, 255, 68%) 68%);
+    bottom: 0;
+}
+
+.cover .form-box {
+    z-index: 999;
+    background: #A8E0FF transparent;
+    border-radius: 10px;
+    border: 4px solid rgba(0, 0, 0);
+    width: 75vh;
+    height: 90vh;
+    padding: 35px 100px;
+}
+
+.cover .form-box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.cover .form-box h2 {
+    color: #000;
+    font-size: 26px;
+    margin-bottom: 35px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.form-box-awal-user .field-awal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 20%);
+    border: 4px solid rgba(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 70px;
+    height: 15vh;
+    text-decoration: none;
+}
+
+.form-box-awal-user .field-awal i {
+    color: #000000;
+    font-size: 4.2em;
+    justify-content: left;
+    position: relative;
+    margin-right: 50px;
+}
+
+.form-box-awal-user .field-awal p {
+    color: #000000;
+    font-size: 1.3em;
+    font-weight: 450;
+    margin-right: 70px;
+}
+
+.form-box-awal-admin .field-awal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255, 20%);
+    border: 4px solid rgba(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 70px;
+    height: 15vh;
+}
+
+.form-box-awal-admin .field-awal i {
+    color: #000000;
+    font-size: 4.2em;
+    justify-content: left;
+    position: relative;
+    margin-right: 40px;
+}
+
+.form-box-awal-admin .field-awal p {
+    color: #000000;
+    font-size: 1.3em;
+    font-weight: 450;
+    margin-right: 60px;
+}
